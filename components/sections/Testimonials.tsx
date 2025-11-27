@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Testimonials() {
   const testimonials = [
@@ -10,10 +11,13 @@ export default function Testimonials() {
       position: "Owner, SignPro Mumbai",
       rating: 5,
       avatar: (
-        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-accent-100 to-beige-200 flex items-center justify-center border-2 border-accent-200">
-          <svg className="w-8 h-8 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-          </svg>
+        <div className="w-16 h-16 rounded-full overflow-hidden relative border-2 border-accent-200">
+          <Image
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2000&auto=format&fit=crop"
+            alt="Professional headshot of Rajesh Sharma"
+            fill
+            className="object-cover"
+          />
         </div>
       ),
     },
@@ -23,10 +27,13 @@ export default function Testimonials() {
       position: "Operations Manager, Digital Prints Ltd",
       rating: 5,
       avatar: (
-        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-beige-200 to-accent-100 flex items-center justify-center border-2 border-accent-200">
-          <svg className="w-8 h-8 text-accent-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-          </svg>
+        <div className="w-16 h-16 rounded-full overflow-hidden relative border-2 border-accent-200">
+          <Image
+            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2000&auto=format&fit=crop"
+            alt="Professional headshot of Priya Patel"
+            fill
+            className="object-cover"
+          />
         </div>
       ),
     },
@@ -36,10 +43,13 @@ export default function Testimonials() {
       position: "Director, National Signage Chain",
       rating: 5,
       avatar: (
-        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-accent-100 to-beige-200 flex items-center justify-center border-2 border-accent-200">
-          <svg className="w-8 h-8 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-          </svg>
+        <div className="w-16 h-16 rounded-full overflow-hidden relative border-2 border-accent-200">
+          <Image
+            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2000&auto=format&fit=crop"
+            alt="Professional headshot of Amit Kumar"
+            fill
+            className="object-cover"
+          />
         </div>
       ),
     },

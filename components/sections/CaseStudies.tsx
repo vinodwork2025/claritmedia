@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function CaseStudies() {
   const cases = [
@@ -18,13 +19,13 @@ export default function CaseStudies() {
       metric: '40%',
       metricLabel: 'Cost Savings',
       image: (
-        <div className="aspect-[16/9] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-6 flex items-center justify-center border border-neutral-200">
-          <div className="text-center">
-            <svg className="w-16 h-16 text-neutral-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-            </svg>
-            <p className="text-xs text-neutral-500 font-medium">Performance Metrics</p>
-          </div>
+        <div className="aspect-[16/9] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-6 overflow-hidden relative border border-neutral-200">
+          <Image
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2400&auto=format&fit=crop"
+            alt="Business analytics and performance metrics charts"
+            fill
+            className="object-cover"
+          />
         </div>
       ),
     },
@@ -41,13 +42,13 @@ export default function CaseStudies() {
       metric: '100%',
       metricLabel: 'Quality Rate',
       image: (
-        <div className="aspect-[16/9] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-6 flex items-center justify-center border border-neutral-200">
-          <div className="text-center">
-            <svg className="w-16 h-16 text-neutral-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-            </svg>
-            <p className="text-xs text-neutral-500 font-medium">Luxury Property</p>
-          </div>
+        <div className="aspect-[16/9] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-6 overflow-hidden relative border border-neutral-200">
+          <Image
+            src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=2400&auto=format&fit=crop"
+            alt="Luxury building and premium property real estate"
+            fill
+            className="object-cover"
+          />
         </div>
       ),
     },
@@ -64,13 +65,13 @@ export default function CaseStudies() {
       metric: '85%',
       metricLabel: 'Satisfaction Increase',
       image: (
-        <div className="aspect-[16/9] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-6 flex items-center justify-center border border-neutral-200">
-          <div className="text-center">
-            <svg className="w-16 h-16 text-neutral-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <p className="text-xs text-neutral-500 font-medium">Customer Satisfaction</p>
-          </div>
+        <div className="aspect-[16/9] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-6 overflow-hidden relative border border-neutral-200">
+          <Image
+            src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2400&auto=format&fit=crop"
+            alt="Happy customers and client satisfaction in retail setting"
+            fill
+            className="object-cover"
+          />
         </div>
       ),
     },

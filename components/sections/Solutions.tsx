@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Solutions() {
   const solutions = [
@@ -16,13 +17,13 @@ export default function Solutions() {
       features: ['Multiple Finishes', 'Weather-Resistant', 'Color Accurate', 'Wide Width Options'],
       href: '/solutions/large-format',
       image: (
-        <div className="aspect-[16/9] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-6 flex items-center justify-center border border-neutral-200">
-          <div className="text-center">
-            <svg className="w-20 h-20 text-neutral-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
-            <p className="text-sm text-neutral-500 font-medium">Large Format Printer</p>
-          </div>
+        <div className="aspect-[16/9] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-6 overflow-hidden relative border border-neutral-200">
+          <Image
+            src="https://images.unsplash.com/photo-1577538928410-5b0c63da9d89?q=80&w=2400&auto=format&fit=crop"
+            alt="Vinyl rolls and photo paper for large format printing"
+            fill
+            className="object-cover"
+          />
         </div>
       ),
     },
@@ -37,13 +38,13 @@ export default function Solutions() {
       features: ['Premium Vinyl', 'Polypropylene', 'One Way Vision', 'Canvas'],
       href: '/solutions/signage',
       image: (
-        <div className="aspect-[16/9] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-6 flex items-center justify-center border border-neutral-200">
-          <div className="text-center">
-            <svg className="w-20 h-20 text-neutral-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-            </svg>
-            <p className="text-sm text-neutral-500 font-medium">Professional Signage Display</p>
-          </div>
+        <div className="aspect-[16/9] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-6 overflow-hidden relative border border-neutral-200">
+          <Image
+            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2400&auto=format&fit=crop"
+            alt="Premium printing materials and vinyl media"
+            fill
+            className="object-cover"
+          />
         </div>
       ),
     },
@@ -58,13 +59,13 @@ export default function Solutions() {
       features: ['Photo Papers', 'Polypropylene', 'Satin Cloth', 'HP Certified'],
       href: '/solutions/pagewide',
       image: (
-        <div className="aspect-[16/9] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-6 flex items-center justify-center border border-neutral-200">
-          <div className="text-center">
-            <svg className="w-20 h-20 text-neutral-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343" />
-            </svg>
-            <p className="text-sm text-neutral-500 font-medium">Lamination Machine</p>
-          </div>
+        <div className="aspect-[16/9] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-6 overflow-hidden relative border border-neutral-200">
+          <Image
+            src="https://images.unsplash.com/photo-1563784462041-5f97ac9523dd?q=80&w=2400&auto=format&fit=crop"
+            alt="High-quality photo prints and professional printing"
+            fill
+            className="object-cover"
+          />
         </div>
       ),
     },
@@ -79,13 +80,13 @@ export default function Solutions() {
       features: ['Royal Sovereign', 'Multiple Finishes', 'Mounting Films', 'Easy Operation'],
       href: '/solutions/lamination',
       image: (
-        <div className="aspect-[16/9] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-6 flex items-center justify-center border border-neutral-200">
-          <div className="text-center">
-            <svg className="w-20 h-20 text-neutral-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-            </svg>
-            <p className="text-sm text-neutral-500 font-medium">Vinyl Cutting System</p>
-          </div>
+        <div className="aspect-[16/9] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-6 overflow-hidden relative border border-neutral-200">
+          <Image
+            src="https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=2400&auto=format&fit=crop"
+            alt="Professional lamination machine and equipment"
+            fill
+            className="object-cover"
+          />
         </div>
       ),
     },

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function ProductEcosystem() {
   const categories = [
@@ -16,13 +17,13 @@ export default function ProductEcosystem() {
       products: ['Basic Vinyl', 'Photo Paper', 'Canvas', 'Textiles'],
       href: '/products/inkjet-media',
       image: (
-        <div className="aspect-[4/3] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-4 flex items-center justify-center border border-neutral-200">
-          <div className="text-center">
-            <svg className="w-16 h-16 text-neutral-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-            </svg>
-            <p className="text-xs text-neutral-500 font-medium">Print Media Rolls</p>
-          </div>
+        <div className="aspect-[4/3] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-4 overflow-hidden relative border border-neutral-200">
+          <Image
+            src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2400&auto=format&fit=crop"
+            alt="Professional print media rolls and materials"
+            fill
+            className="object-cover"
+          />
         </div>
       ),
     },
@@ -37,13 +38,13 @@ export default function ProductEcosystem() {
       products: ['Premium Vinyl', 'Polypropylene', 'One Way Vision', 'Canvas'],
       href: '/products/latex-ecosolvent',
       image: (
-        <div className="aspect-[4/3] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-4 flex items-center justify-center border border-neutral-200">
-          <div className="text-center">
-            <svg className="w-16 h-16 text-neutral-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-            </svg>
-            <p className="text-xs text-neutral-500 font-medium">Lamination Films</p>
-          </div>
+        <div className="aspect-[4/3] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-4 overflow-hidden relative border border-neutral-200">
+          <Image
+            src="https://images.unsplash.com/photo-1612178537253-bccd437b730e?q=80&w=2400&auto=format&fit=crop"
+            alt="Professional printing setup with large format printer"
+            fill
+            className="object-cover"
+          />
         </div>
       ),
     },
@@ -58,13 +59,13 @@ export default function ProductEcosystem() {
       products: ['Photo Papers', 'Polypropylene', 'Satin Cloth', 'Specialty Media'],
       href: '/products/hp-pagewide',
       image: (
-        <div className="aspect-[4/3] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-4 flex items-center justify-center border border-neutral-200">
-          <div className="text-center">
-            <svg className="w-16 h-16 text-neutral-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-            </svg>
-            <p className="text-xs text-neutral-500 font-medium">Industrial Laminator</p>
-          </div>
+        <div className="aspect-[4/3] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-4 overflow-hidden relative border border-neutral-200">
+          <Image
+            src="https://images.unsplash.com/photo-1563784462041-5f97ac9523dd?q=80&w=2400&auto=format&fit=crop"
+            alt="High-quality photo prints and professional media"
+            fill
+            className="object-cover"
+          />
         </div>
       ),
     },
@@ -79,13 +80,13 @@ export default function ProductEcosystem() {
       products: ['Glossy Films', 'Matte Films', 'Frosted & Glitter', 'Mounting Films'],
       href: '/products/lamination-films',
       image: (
-        <div className="aspect-[4/3] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-4 flex items-center justify-center border border-neutral-200">
-          <div className="text-center">
-            <svg className="w-16 h-16 text-neutral-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-            </svg>
-            <p className="text-xs text-neutral-500 font-medium">Vinyl Cutter</p>
-          </div>
+        <div className="aspect-[4/3] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-4 overflow-hidden relative border border-neutral-200">
+          <Image
+            src="https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=2400&auto=format&fit=crop"
+            alt="Lamination machine and professional finishing equipment"
+            fill
+            className="object-cover"
+          />
         </div>
       ),
     },

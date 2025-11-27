@@ -36,7 +36,7 @@ export default function TrustBanner() {
               transition={{ delay: index * 0.1 }}
               className="flex items-center justify-center"
             >
-              <div className="w-32 h-16 bg-neutral-50 rounded-lg flex items-center justify-center text-neutral-400 text-xs font-medium border border-neutral-200 hover:border-primary-600/50 hover:shadow-md transition-all">
+              <div className="w-32 h-16 bg-neutral-50 rounded-lg flex items-center justify-center text-neutral-400 text-xs font-medium border border-neutral-200 hover:border-accent-500/50 hover:shadow-md hover:shadow-accent-500/10 transition-all">
                 {logo}
               </div>
             </motion.div>

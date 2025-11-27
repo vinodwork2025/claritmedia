@@ -85,7 +85,7 @@ export default function CaseStudies() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-2 bg-primary-100 text-primary-600 rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
+          <span className="inline-block px-4 py-2 bg-accent-100 text-accent-700 rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
             Success Stories
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mt-4">Proven Results for B2B Clients</h2>
@@ -107,11 +107,11 @@ export default function CaseStudies() {
               {caseStudy.image}
 
               <div className="flex items-center justify-between mb-4">
-                <span className="text-sm font-semibold text-primary-600 bg-primary-50 px-3 py-1 rounded-full">
+                <span className="text-sm font-semibold text-accent-700 bg-accent-100 px-3 py-1 rounded-full">
                   {caseStudy.industry}
                 </span>
                 <div className="text-right">
-                  <div className="text-3xl font-bold text-primary-600">{caseStudy.metric}</div>
+                  <div className="text-3xl font-bold text-accent-600">{caseStudy.metric}</div>
                   <div className="text-xs text-neutral-500">{caseStudy.metricLabel}</div>
                 </div>
               </div>
@@ -134,7 +134,7 @@ export default function CaseStudies() {
                   <ul className="space-y-2">
                     {caseStudy.results.map((result, idx) => (
                       <li key={idx} className="flex items-start gap-2 text-sm text-neutral-600">
-                        <svg className="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                         {result}
@@ -153,7 +153,7 @@ export default function CaseStudies() {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Link href="/case-studies" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary-600 border-2 border-primary-600 rounded-lg font-semibold hover:bg-primary-600 hover:text-white transition-all shadow-lg hover:shadow-xl">
+          <Link href="/case-studies" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-accent-600 border-2 border-accent-600 rounded-lg font-semibold hover:bg-accent-600 hover:text-white transition-all shadow-lg hover:shadow-xl hover:shadow-accent-500/20">
             View All Case Studies
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />

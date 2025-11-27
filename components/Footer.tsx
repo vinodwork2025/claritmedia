@@ -38,7 +38,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-accent-500 rounded-lg flex items-center justify-center shadow-lg">
+              <div className="w-10 h-10 bg-gradient-to-br from-accent-500 to-accent-700 rounded-lg flex items-center justify-center shadow-lg">
                 <span className="text-white font-bold text-xl">C</span>
               </div>
               <div>
@@ -47,18 +47,18 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-neutral-400 mb-6 max-w-sm leading-relaxed">
-              Powering India's most demanding print & signage projects since 2001.
-              Part of Maruthi Associates family.
+              A Print Media Partner You Can Trust. Since 2001, we've been Bangalore's premier supplier.
+              Part of Maruthi Associates.
             </p>
             <div className="space-y-3 text-sm text-neutral-400">
               <p className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-lg bg-primary-600/10 flex items-center justify-center">
-                  <svg className="w-4 h-4 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-8 h-8 rounded-lg bg-accent-600/10 flex items-center justify-center">
+                  <svg className="w-4 h-4 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
-                <span>Bangalore, India</span>
+                <span>#4, Survey #23, Hulimavu, Bangalore</span>
               </p>
               <p className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-lg bg-accent-600/10 flex items-center justify-center">
@@ -69,12 +69,20 @@ export default function Footer() {
                 <span>info@clarit.in</span>
               </p>
               <p className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-lg bg-primary-600/10 flex items-center justify-center">
-                  <svg className="w-4 h-4 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-8 h-8 rounded-lg bg-accent-600/10 flex items-center justify-center">
+                  <svg className="w-4 h-4 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
-                <span>+91 80 1234 5678</span>
+                <span>+91 9980160821 / +91 9980259596</span>
+              </p>
+              <p className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-lg bg-accent-600/10 flex items-center justify-center">
+                  <svg className="w-4 h-4 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                  </svg>
+                </div>
+                <span>www.clarit.in</span>
               </p>
             </div>
           </div>
@@ -87,7 +95,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-neutral-400 hover:text-primary-400 transition-colors text-sm"
+                    className="text-neutral-400 hover:text-accent-400 transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -104,7 +112,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-neutral-400 hover:text-primary-400 transition-colors text-sm"
+                    className="text-neutral-400 hover:text-accent-400 transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -121,7 +129,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-neutral-400 hover:text-primary-400 transition-colors text-sm"
+                    className="text-neutral-400 hover:text-accent-400 transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -138,10 +146,10 @@ export default function Footer() {
               © {currentYear} Clarit - CLARITY MEDIA. Part of Maruthi Associates. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <Link href="/privacy" className="text-neutral-400 hover:text-primary-400 text-sm transition-colors">
+              <Link href="/privacy" className="text-neutral-400 hover:text-accent-400 text-sm transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="text-neutral-400 hover:text-primary-400 text-sm transition-colors">
+              <Link href="/terms" className="text-neutral-400 hover:text-accent-400 text-sm transition-colors">
                 Terms of Service
               </Link>
             </div>

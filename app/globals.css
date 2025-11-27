@@ -3,31 +3,43 @@
 @import "tailwindcss";
 
 @theme {
-  /* Light Professional Blue Palette */
-  --color-primary-50: #f0f9ff;
-  --color-primary-100: #e0f2fe;
-  --color-primary-200: #bae6fd;
-  --color-primary-300: #7dd3fc;
-  --color-primary-400: #38bdf8;
-  --color-primary-500: #0ea5e9;
-  --color-primary-600: #0284c7;
-  --color-primary-700: #0369a1;
-  --color-primary-800: #075985;
-  --color-primary-900: #0c4a6e;
+  /* Clarit Orange Brand Palette */
+  --color-primary-50: #fff7ed;
+  --color-primary-100: #ffedd5;
+  --color-primary-200: #fed7aa;
+  --color-primary-300: #fdba74;
+  --color-primary-400: #fb923c;
+  --color-primary-500: #f97316;
+  --color-primary-600: #ea580c;
+  --color-primary-700: #c2410c;
+  --color-primary-800: #9a3412;
+  --color-primary-900: #7c2d12;
 
-  /* Accent Teal/Green Palette */
-  --color-accent-50: #f0fdfa;
-  --color-accent-100: #ccfbf1;
-  --color-accent-200: #99f6e4;
-  --color-accent-300: #5eead4;
-  --color-accent-400: #2dd4bf;
-  --color-accent-500: #14b8a6;
-  --color-accent-600: #0d9488;
-  --color-accent-700: #0f766e;
-  --color-accent-800: #115e59;
-  --color-accent-900: #134e4a;
+  /* Clarit Secondary Orange - Deeper tones */
+  --color-accent-50: #fff7ed;
+  --color-accent-100: #ffedd5;
+  --color-accent-200: #fed7aa;
+  --color-accent-300: #fdba74;
+  --color-accent-400: #ff8c42;
+  --color-accent-500: #ff7f27;
+  --color-accent-600: #f68b1f;
+  --color-accent-700: #dd6b20;
+  --color-accent-800: #c05621;
+  --color-accent-900: #9c4221;
 
-  /* Light Neutral Palette */
+  /* Clarit Beige/Cream from logo */
+  --color-beige-50: #fefcf9;
+  --color-beige-100: #fdf8f0;
+  --color-beige-200: #f9efe1;
+  --color-beige-300: #f5e6d3;
+  --color-beige-400: #eddcc5;
+  --color-beige-500: #e5d2b7;
+  --color-beige-600: #d4b894;
+  --color-beige-700: #b99870;
+  --color-beige-800: #997952;
+  --color-beige-900: #7d6343;
+
+  /* Neutral Palette */
   --color-neutral-50: #fafafa;
   --color-neutral-100: #f5f5f5;
   --color-neutral-200: #e5e5e5;
@@ -36,13 +48,8 @@
   --color-neutral-500: #737373;
   --color-neutral-600: #525252;
   --color-neutral-700: #404040;
-  --color-neutral-800: #262626;
-  --color-neutral-900: #171717;
-
-  /* Light Background Colors */
-  --color-light-50: #ffffff;
-  --color-light-100: #fafafa;
-  --color-light-200: #f5f5f5;
+  --color-neutral-800: #3a3a3a;
+  --color-neutral-900: #2a2a2a;
 
   --font-sans: Inter, system-ui, sans-serif;
   --font-heading: Poppins, Inter, system-ui, sans-serif;
@@ -104,7 +111,7 @@
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-accent-500 to-accent-700 bg-clip-text text-transparent;
   }
 
   .section-title {

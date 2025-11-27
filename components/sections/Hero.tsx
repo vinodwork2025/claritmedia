@@ -5,17 +5,17 @@ import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary-50 via-white to-accent-50 pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-beige-100 via-white to-accent-50 pt-20">
       {/* Subtle Pattern Overlay */}
       <div className="absolute inset-0 opacity-[0.03]">
         <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230ea5e9' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ff7f27' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }}/>
       </div>
 
       {/* Floating Gradient Orbs */}
-      <div className="absolute top-40 -left-20 w-96 h-96 bg-primary-200 rounded-full filter blur-3xl opacity-30 animate-pulse" />
-      <div className="absolute bottom-40 -right-20 w-[30rem] h-[30rem] bg-accent-200 rounded-full filter blur-3xl opacity-30 animate-pulse" style={{ animationDelay: '1s' }} />
+      <div className="absolute top-40 -left-20 w-96 h-96 bg-accent-200 rounded-full filter blur-3xl opacity-30 animate-pulse" />
+      <div className="absolute bottom-40 -right-20 w-[30rem] h-[30rem] bg-accent-300 rounded-full filter blur-3xl opacity-30 animate-pulse" style={{ animationDelay: '1s' }} />
 
       <div className="container relative z-10">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
@@ -32,7 +32,7 @@ export default function Hero() {
               transition={{ delay: 0.2 }}
               className="inline-block mb-6"
             >
-              <span className="inline-flex items-center gap-2 bg-gradient-to-r from-primary-50 to-accent-50 text-primary-700 px-5 py-2.5 rounded-full border border-primary-200 font-semibold text-sm">
+              <span className="inline-flex items-center gap-2 bg-gradient-to-r from-accent-100 to-beige-200 text-accent-700 px-5 py-2.5 rounded-full border border-accent-200 font-semibold text-sm">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
@@ -46,7 +46,7 @@ export default function Hero() {
               transition={{ delay: 0.3 }}
               className="mb-6 text-neutral-900"
             >
-              Powering India's Most <span className="gradient-text">Premium Print & Signage</span> Projects
+              A Print Media Partner <span className="gradient-text">You Can Trust</span>
             </motion.h1>
 
             <motion.p
@@ -55,7 +55,7 @@ export default function Hero() {
               transition={{ delay: 0.4 }}
               className="text-xl text-neutral-600 mb-8 leading-relaxed"
             >
-              Leading B2B supplier of premium large-format print media, lamination films, industrial laminators, and precision vinyl cutters. From signage shops to corporate branding teams—we deliver the quality your projects demand.
+              Since 2001, Maruthi Associates (operating as Clarit Media) has been Bangalore's premier supplier of inkjet media, latex & eco-solvent media, HP Niagara PageWide media, lamination films, and Royal Sovereign laminators.
             </motion.p>
 
             <motion.div
@@ -83,15 +83,15 @@ export default function Hero() {
               className="grid grid-cols-3 gap-8 mt-12 pt-12 border-t border-neutral-200"
             >
               <div>
-                <div className="text-4xl font-bold text-primary-600 mb-2">24+</div>
+                <div className="text-4xl font-bold text-accent-600 mb-2">24+</div>
                 <div className="text-sm text-neutral-600 font-medium">Years Experience</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-primary-600 mb-2">500+</div>
+                <div className="text-4xl font-bold text-accent-600 mb-2">500+</div>
                 <div className="text-sm text-neutral-600 font-medium">B2B Clients</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-primary-600 mb-2">99%</div>
+                <div className="text-4xl font-bold text-accent-600 mb-2">99%</div>
                 <div className="text-sm text-neutral-600 font-medium">On-Time Delivery</div>
               </div>
             </motion.div>
@@ -110,7 +110,7 @@ export default function Hero() {
                 {/* Placeholder for professional print media image */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center p-8">
-                    <div className="w-24 h-24 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-primary-600 to-accent-600 flex items-center justify-center">
+                    <div className="w-24 h-24 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-accent-500 to-accent-700 flex items-center justify-center">
                       <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                       </svg>
@@ -122,8 +122,8 @@ export default function Hero() {
               </div>
 
               {/* Overlay Badge */}
-              <div className="absolute top-6 left-6 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-xl shadow-lg border border-neutral-200">
-                <p className="text-xs font-semibold text-primary-600 uppercase tracking-wide">ISO Certified</p>
+              <div className="absolute top-6 left-6 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-xl shadow-lg border border-accent-200">
+                <p className="text-xs font-semibold text-accent-600 uppercase tracking-wide">Since 2001</p>
               </div>
             </div>
 
@@ -151,7 +151,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1 }}
-              className="absolute -top-6 -right-6 bg-primary-600 text-white rounded-2xl px-6 py-4 shadow-2xl"
+              className="absolute -top-6 -right-6 bg-gradient-to-br from-accent-500 to-accent-700 text-white rounded-2xl px-6 py-4 shadow-2xl"
             >
               <p className="text-3xl font-bold">24/7</p>
               <p className="text-sm font-medium opacity-90">Support</p>
@@ -170,12 +170,12 @@ export default function Hero() {
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}
-          className="w-6 h-10 border-2 border-primary-400 rounded-full flex items-start justify-center p-2"
+          className="w-6 h-10 border-2 border-accent-400 rounded-full flex items-start justify-center p-2"
         >
           <motion.div
             animate={{ y: [0, 12, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-1.5 h-2 bg-primary-400 rounded-full"
+            className="w-1.5 h-2 bg-accent-400 rounded-full"
           />
         </motion.div>
       </motion.div>

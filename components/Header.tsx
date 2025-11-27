@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export default function Header() {
@@ -36,14 +37,15 @@ export default function Header() {
       <nav className="container">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3 group">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary-600 to-accent-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform shadow-md">
-              <span className="text-white font-bold text-2xl">C</span>
-            </div>
-            <div>
-              <div className="text-xl font-bold font-heading text-neutral-900">CLARIT</div>
-              <div className="text-xs text-neutral-500 -mt-1 font-medium">CLARITY MEDIA</div>
-            </div>
+          <Link href="/" className="flex items-center group">
+            <Image
+              src="/images/clarit-logo.png"
+              alt="Clarit Media"
+              width={180}
+              height={60}
+              className="h-14 w-auto group-hover:scale-105 transition-transform"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}

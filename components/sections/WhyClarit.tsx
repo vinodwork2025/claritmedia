@@ -106,7 +106,7 @@ export default function WhyClarit() {
                 <tr className="border-b border-neutral-200 bg-neutral-50">
                   <th className="text-left py-4 px-6 text-neutral-700 font-semibold">Feature</th>
                   <th className="text-left py-4 px-6 text-neutral-700 font-semibold">Other Suppliers</th>
-                  <th className="text-left py-4 px-6 text-primary-600 font-semibold bg-primary-50">Clarit</th>
+                  <th className="text-left py-4 px-6 text-accent-700 font-semibold bg-accent-100">Clarit Media</th>
                 </tr>
               </thead>
               <tbody>
@@ -117,7 +117,7 @@ export default function WhyClarit() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
-                    className={`border-b border-neutral-100 ${item.highlight ? 'bg-primary-50/30' : ''}`}
+                    className={`border-b border-neutral-100 ${item.highlight ? 'bg-accent-50/50' : ''}`}
                   >
                     <td className="py-4 px-6 font-semibold text-neutral-900">{item.feature}</td>
                     <td className="py-4 px-6 text-neutral-600">
@@ -128,9 +128,9 @@ export default function WhyClarit() {
                         {item.competitor}
                       </div>
                     </td>
-                    <td className="py-4 px-6 text-neutral-900 bg-primary-50/30">
+                    <td className="py-4 px-6 text-neutral-900 bg-accent-50/50">
                       <div className="flex items-center gap-2">
-                        <svg className="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                         {item.clarit}
@@ -152,9 +152,9 @@ export default function WhyClarit() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="text-center p-6 rounded-xl bg-gradient-to-br from-primary-50 to-accent-50 border border-primary-200 shadow-lg hover:shadow-xl transition-all"
+              className="text-center p-6 rounded-xl bg-gradient-to-br from-accent-50 to-beige-100 border border-accent-200 shadow-lg hover:shadow-xl hover:shadow-accent-500/10 transition-all"
             >
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary-600 to-accent-600 flex items-center justify-center text-white">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-accent-500 to-accent-700 flex items-center justify-center text-white">
                 {advantage.icon}
               </div>
               <h3 className="text-xl font-bold text-neutral-900 mb-2">{advantage.title}</h3>

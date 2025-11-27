@@ -51,7 +51,7 @@ export default function Problems() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-2 bg-primary-100 text-primary-600 rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
+          <span className="inline-block px-4 py-2 bg-accent-100 text-accent-700 rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
             Common Challenges
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mt-4">Problems We Solve</h2>
@@ -70,7 +70,7 @@ export default function Problems() {
               transition={{ delay: index * 0.1 }}
               className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all text-center border border-neutral-100"
             >
-              <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-gradient-to-br from-red-50 to-orange-50 flex items-center justify-center text-red-600">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-gradient-to-br from-accent-100 to-accent-200 flex items-center justify-center text-accent-700">
                 {problem.icon}
               </div>
               <h3 className="text-xl font-bold text-neutral-900 mb-3">{problem.title}</h3>

@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function CTASection() {
   return (
-    <section className="section-padding bg-gradient-to-br from-primary-600 via-primary-500 to-accent-500 relative overflow-hidden">
+    <section className="section-padding bg-gradient-to-br from-accent-500 via-accent-600 to-accent-700 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -21,16 +21,16 @@ export default function CTASection() {
           className="max-w-4xl mx-auto text-center"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to Transform Your Print Business?
+            Ready to Partner with Bangalore's Most Trusted Print Media Supplier?
           </h2>
           <p className="text-xl text-white/90 mb-10 leading-relaxed">
-            Join 500+ leading businesses who trust Clarit for their print media and equipment needs. Get a custom quote today.
+            Since 2001, Clarit Media has been delivering premium inkjet media, lamination films, and equipment. Get a custom quote today.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary-600 rounded-lg font-semibold hover:bg-neutral-50 transition-colors shadow-xl hover:shadow-2xl"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-accent-600 rounded-lg font-semibold hover:bg-neutral-50 hover:shadow-accent-500/50 transition-all shadow-xl hover:shadow-2xl"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -65,7 +65,7 @@ export default function CTASection() {
                 </div>
                 <div>
                   <div className="font-semibold">Call Us</div>
-                  <div className="text-white/80">+91 80 1234 5678</div>
+                  <div className="text-white/80">+91 9980160821 / +91 9980259596</div>
                 </div>
               </div>
 
@@ -90,7 +90,7 @@ export default function CTASection() {
                 </div>
                 <div>
                   <div className="font-semibold">Visit Us</div>
-                  <div className="text-white/80">Bangalore, India</div>
+                  <div className="text-white/80">#4, Survey #23, Hulimavu, Bangalore</div>
                 </div>
               </div>
             </div>

@@ -15,6 +15,16 @@ export default function Solutions() {
       description: 'Complete range of premium inkjet media for latex, eco-solvent, and HP PageWide systems. Consistent quality for flawless prints every time.',
       features: ['HP Certified Media', 'Weather-Resistant', 'Color Accurate', 'Wide Width Options'],
       href: '/solutions/large-format',
+      image: (
+        <div className="aspect-[16/9] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-6 flex items-center justify-center border border-neutral-200">
+          <div className="text-center">
+            <svg className="w-20 h-20 text-neutral-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <p className="text-sm text-neutral-500 font-medium">Large Format Printer</p>
+          </div>
+        </div>
+      ),
     },
     {
       icon: (
@@ -26,6 +36,16 @@ export default function Solutions() {
       description: 'Professional-grade signage media and equipment. From indoor displays to outdoor billboards—built to last.',
       features: ['UV Resistant', 'Anti-Curl Technology', 'Long-Term Durability', 'Multiple Finishes'],
       href: '/solutions/signage',
+      image: (
+        <div className="aspect-[16/9] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-6 flex items-center justify-center border border-neutral-200">
+          <div className="text-center">
+            <svg className="w-20 h-20 text-neutral-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+            </svg>
+            <p className="text-sm text-neutral-500 font-medium">Professional Signage Display</p>
+          </div>
+        </div>
+      ),
     },
     {
       icon: (
@@ -37,6 +57,16 @@ export default function Solutions() {
       description: 'Industrial laminators and premium PVC films. Protect your prints and add professional finishing touches.',
       features: ['Royal Sovereign Quality', 'Multiple Film Options', 'Easy Operation', 'Consistent Results'],
       href: '/solutions/lamination',
+      image: (
+        <div className="aspect-[16/9] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-6 flex items-center justify-center border border-neutral-200">
+          <div className="text-center">
+            <svg className="w-20 h-20 text-neutral-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343" />
+            </svg>
+            <p className="text-sm text-neutral-500 font-medium">Lamination Machine</p>
+          </div>
+        </div>
+      ),
     },
     {
       icon: (
@@ -48,11 +78,21 @@ export default function Solutions() {
       description: 'SHAPECUT heavy-duty vinyl cutters with professional design software. Precision cutting for complex graphics.',
       features: ['Design Software Included', 'High Precision', 'Fast Cutting Speed', 'Technical Support'],
       href: '/solutions/vinyl-cutting',
+      image: (
+        <div className="aspect-[16/9] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg mb-6 flex items-center justify-center border border-neutral-200">
+          <div className="text-center">
+            <svg className="w-20 h-20 text-neutral-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+            </svg>
+            <p className="text-sm text-neutral-500 font-medium">Vinyl Cutting System</p>
+          </div>
+        </div>
+      ),
     },
   ]
 
   return (
-    <section className="section-padding bg-dark-100">
+    <section className="section-padding bg-white">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -60,9 +100,11 @@ export default function Solutions() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="eyebrow">Complete Solutions</span>
-          <h2 className="section-title mt-4">Integrated Print & Signage Solutions</h2>
-          <p className="section-subtitle mx-auto mt-4">
+          <span className="inline-block px-4 py-2 bg-accent-100 text-accent-600 rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
+            Complete Solutions
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mt-4">Integrated Print & Signage Solutions</h2>
+          <p className="text-xl text-neutral-600 max-w-3xl mx-auto mt-4">
             End-to-end solutions designed for professional results
           </p>
         </motion.div>
@@ -75,29 +117,31 @@ export default function Solutions() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 }}
-              className="card card-hover group"
+              className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all border border-neutral-100 group"
             >
-              <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
+              {solution.image}
+
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary-600 to-accent-600 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform shadow-lg">
                 {solution.icon}
               </div>
 
-              <h3 className="text-2xl font-bold text-white mb-4">{solution.title}</h3>
-              <p className="text-gray-400 mb-6 leading-relaxed">{solution.description}</p>
+              <h3 className="text-2xl font-bold text-neutral-900 mb-4">{solution.title}</h3>
+              <p className="text-neutral-600 mb-6 leading-relaxed">{solution.description}</p>
 
               <div className="grid grid-cols-2 gap-3 mb-6">
                 {solution.features.map((feature, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-sm">
-                    <svg className="w-5 h-5 text-primary-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-gray-300">{feature}</span>
+                    <span className="text-neutral-700">{feature}</span>
                   </div>
                 ))}
               </div>
 
               <Link
                 href={solution.href}
-                className="inline-flex items-center gap-2 text-primary-400 font-semibold hover:gap-3 transition-all group"
+                className="inline-flex items-center gap-2 text-primary-600 font-semibold hover:gap-3 transition-all group"
               >
                 View Solution
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

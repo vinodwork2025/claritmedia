@@ -3,31 +3,46 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-50: #eff6ff;
-  --color-primary-100: #dbeafe;
-  --color-primary-200: #bfdbfe;
-  --color-primary-300: #93c5fd;
-  --color-primary-400: #60a5fa;
-  --color-primary-500: #1D9BF0;
-  --color-primary-600: #1a87d6;
-  --color-primary-700: #1570b3;
-  --color-primary-800: #115a90;
-  --color-primary-900: #0d4570;
+  /* Light Professional Blue Palette */
+  --color-primary-50: #f0f9ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-200: #bae6fd;
+  --color-primary-300: #7dd3fc;
+  --color-primary-400: #38bdf8;
+  --color-primary-500: #0ea5e9;
+  --color-primary-600: #0284c7;
+  --color-primary-700: #0369a1;
+  --color-primary-800: #075985;
+  --color-primary-900: #0c4a6e;
 
-  --color-accent-50: #fff7ed;
-  --color-accent-100: #ffedd5;
-  --color-accent-200: #fed7aa;
-  --color-accent-300: #fdba74;
-  --color-accent-400: #fb923c;
-  --color-accent-500: #FF7A1A;
-  --color-accent-600: #ea5e0a;
-  --color-accent-700: #c24607;
-  --color-accent-800: #9a3412;
-  --color-accent-900: #7c2d12;
+  /* Accent Teal/Green Palette */
+  --color-accent-50: #f0fdfa;
+  --color-accent-100: #ccfbf1;
+  --color-accent-200: #99f6e4;
+  --color-accent-300: #5eead4;
+  --color-accent-400: #2dd4bf;
+  --color-accent-500: #14b8a6;
+  --color-accent-600: #0d9488;
+  --color-accent-700: #0f766e;
+  --color-accent-800: #115e59;
+  --color-accent-900: #134e4a;
 
-  --color-dark-50: #18181b;
-  --color-dark-100: #0B0E11;
-  --color-dark-200: #050709;
+  /* Light Neutral Palette */
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #171717;
+
+  /* Light Background Colors */
+  --color-light-50: #ffffff;
+  --color-light-100: #fafafa;
+  --color-light-200: #f5f5f5;
 
   --font-sans: Inter, system-ui, sans-serif;
   --font-heading: Poppins, Inter, system-ui, sans-serif;
@@ -35,11 +50,11 @@
 
 @layer base {
   body {
-    @apply bg-dark-200 text-gray-100 font-sans antialiased;
+    @apply bg-neutral-50 text-neutral-900 font-sans antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading font-bold;
+    @apply font-heading font-bold text-neutral-900;
   }
 
   h1 {
@@ -57,19 +72,19 @@
 
 @layer components {
   .btn {
-    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center gap-2;
+    @apply px-6 py-3 rounded-xl font-semibold transition-all duration-300 inline-flex items-center gap-2 shadow-sm;
   }
 
   .btn-primary {
-    @apply bg-primary-500 text-white hover:bg-primary-600 hover:shadow-lg hover:shadow-primary-500/50 hover:-translate-y-0.5;
+    @apply bg-primary-600 text-white hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/30 hover:-translate-y-0.5;
   }
 
   .btn-secondary {
-    @apply bg-transparent border-2 border-white text-white hover:bg-white hover:text-dark-200;
+    @apply bg-white border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white shadow-sm;
   }
 
   .btn-accent {
-    @apply bg-accent-500 text-white hover:bg-accent-600 hover:shadow-lg hover:shadow-accent-500/50 hover:-translate-y-0.5;
+    @apply bg-accent-600 text-white hover:bg-accent-700 hover:shadow-lg hover:shadow-accent-600/30 hover:-translate-y-0.5;
   }
 
   .section-padding {
@@ -81,27 +96,27 @@
   }
 
   .card {
-    @apply bg-dark-100 rounded-xl p-6 md:p-8 border border-gray-800 hover:border-primary-500/50 transition-all duration-300;
+    @apply bg-white rounded-2xl p-6 md:p-8 border border-neutral-200 hover:border-primary-300 hover:shadow-xl transition-all duration-300;
   }
 
   .card-hover {
-    @apply hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-500/10;
+    @apply hover:-translate-y-1 hover:shadow-2xl;
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent;
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold mb-4;
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-neutral-900;
   }
 
   .section-subtitle {
-    @apply text-lg md:text-xl text-gray-400 max-w-3xl;
+    @apply text-lg md:text-xl text-neutral-600 max-w-3xl;
   }
 
   .eyebrow {
-    @apply text-sm md:text-base font-semibold text-primary-400 uppercase tracking-wider mb-4;
+    @apply text-sm md:text-base font-semibold text-primary-600 uppercase tracking-wider mb-4;
   }
 }
 
@@ -111,11 +126,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-dark-200;
+  @apply bg-neutral-100;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-primary-500 rounded-full;
+  @apply bg-primary-400 rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {

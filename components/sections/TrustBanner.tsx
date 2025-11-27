@@ -13,7 +13,7 @@ export default function TrustBanner() {
   ]
 
   return (
-    <section className="py-12 bg-dark-100 border-y border-gray-800">
+    <section className="py-12 bg-white border-y border-neutral-200">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,7 +21,7 @@ export default function TrustBanner() {
           viewport={{ once: true }}
           className="text-center mb-8"
         >
-          <p className="text-gray-400 text-sm uppercase tracking-wider font-semibold">
+          <p className="text-neutral-600 text-sm uppercase tracking-wider font-semibold">
             Trusted by leading print and signage businesses across India
           </p>
         </motion.div>
@@ -36,7 +36,7 @@ export default function TrustBanner() {
               transition={{ delay: index * 0.1 }}
               className="flex items-center justify-center"
             >
-              <div className="w-32 h-16 bg-gray-800/50 rounded-lg flex items-center justify-center text-gray-600 text-xs font-medium border border-gray-700/50 hover:border-primary-500/50 transition-colors">
+              <div className="w-32 h-16 bg-neutral-50 rounded-lg flex items-center justify-center text-neutral-400 text-xs font-medium border border-neutral-200 hover:border-primary-600/50 hover:shadow-md transition-all">
                 {logo}
               </div>
             </motion.div>

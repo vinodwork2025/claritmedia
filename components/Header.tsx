@@ -29,20 +29,20 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-dark-100/95 backdrop-blur-lg shadow-lg shadow-primary-500/5'
-          : 'bg-transparent'
+          ? 'bg-white/95 backdrop-blur-lg shadow-lg border-b border-neutral-200'
+          : 'bg-white/80 backdrop-blur-sm'
       }`}
     >
       <nav className="container">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-accent-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-              <span className="text-white font-bold text-xl">C</span>
+            <div className="w-12 h-12 bg-gradient-to-br from-primary-600 to-accent-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform shadow-md">
+              <span className="text-white font-bold text-2xl">C</span>
             </div>
             <div>
-              <div className="text-xl font-bold font-heading text-white">CLARIT</div>
-              <div className="text-xs text-gray-400 -mt-1">CLARITY MEDIA</div>
+              <div className="text-xl font-bold font-heading text-neutral-900">CLARIT</div>
+              <div className="text-xs text-neutral-500 -mt-1 font-medium">CLARITY MEDIA</div>
             </div>
           </Link>
 
@@ -52,10 +52,10 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-300 hover:text-primary-400 font-medium transition-colors relative group"
+                className="text-neutral-700 hover:text-primary-600 font-medium transition-colors relative group"
               >
                 {link.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-500 group-hover:w-full transition-all duration-300" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 group-hover:w-full transition-all duration-300" />
               </Link>
             ))}
           </div>
@@ -73,7 +73,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-gray-300 hover:text-white"
+            className="lg:hidden p-2 text-neutral-700 hover:text-neutral-900"
             aria-label="Toggle menu"
           >
             <svg
@@ -116,7 +116,7 @@ export default function Header() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="block px-4 py-3 text-gray-300 hover:text-white hover:bg-dark-50 rounded-lg transition-colors"
+                    className="block px-4 py-3 text-neutral-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors"
                   >
                     {link.label}
                   </Link>
